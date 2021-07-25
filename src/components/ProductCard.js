@@ -1,5 +1,6 @@
 import { Button, Card, Col } from "antd";
 import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
 import { addToCart, removeFromCart } from "../redux/shop";
 
 const ProductCard = ({ product }) => {
@@ -9,6 +10,7 @@ const ProductCard = ({ product }) => {
     const item = cartItems.find((item) => item.id === id);
     return item;
   };
+
   return (
     <>
       <Col lg={5} md={12} sm={12} key={`${product.id}`}>
