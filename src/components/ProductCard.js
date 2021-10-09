@@ -1,6 +1,5 @@
 import { Button, Card, Col } from "antd";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
 import { addToCart, removeFromCart } from "../redux/shop";
 
 const ProductCard = ({ product }) => {
